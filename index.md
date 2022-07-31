@@ -1,3 +1,4 @@
+{#my-anchor}
 # h1 標題
 ## h2 標題
 ### h3 標題
@@ -99,7 +100,7 @@ x<sub>a</sub><sup>2</sup>
 
 ---  
 [Google](https://www.google.com.tw)  
-[返回頂端](#h1 標題)
----  
 
+---  
+[回頂端]{#}
 
