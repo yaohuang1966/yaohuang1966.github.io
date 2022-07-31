@@ -95,7 +95,7 @@ x<sub>a</sub><sup>2</sup>
 |第二列第一欄   |第二列第二欄   | 
 
 ---  
-![可愛的小咪](https://yaohuang1966.github.io/images/cat.jpg)  
+![可愛的小咪](images/cat.jpg)  
 
 ---  
 
