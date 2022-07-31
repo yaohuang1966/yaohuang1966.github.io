@@ -28,7 +28,7 @@ ___粗斜體文字___
 
 <u>文字加底線</u>
 
-~~文字加刪除線~~
+~~文字加刪除線~~  
 
 x<sub>a</sub><sup>2</sup>
 
@@ -105,6 +105,6 @@ x<sub>a</sub><sup>2</sup>
 [返回頂端](#top)
 
 ---  
-<audio src="media/your_answer_clip.mp3" controls>不支援 audio</audio>
+<audio src="../media/your_answer_clip.mp3" controls>不支援 audio</audio>
 
-<video src="media/cat.mp4" width="720" height="480" poster="images/cat_video_poster.jpg" controls> 不支援 video</video>
+<video src="../media/cat.mp4" width="720" height="480" poster="images/cat_video_poster.jpg" controls> 不支援 video</video>
