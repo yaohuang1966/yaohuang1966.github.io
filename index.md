@@ -99,7 +99,7 @@ x<sub>a</sub><sup>2</sup>
 ![可愛的小咪](images/cat.jpg)  
 
 ---  
-[Google](https://www.google.com.tw)  
+[Google](https://www.google.com.tw){:target="_blank"} 
 
 ---  
 [返回頂端](#top)
