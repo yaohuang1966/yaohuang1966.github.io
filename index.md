@@ -1,4 +1,4 @@
-{#my-anchor}
+[頂端錨點](){:name='top'}
 # h1 標題
 ## h2 標題
 ### h3 標題
@@ -102,5 +102,5 @@ x<sub>a</sub><sup>2</sup>
 [Google](https://www.google.com.tw)  
 
 ---  
-[回頂端]{#my-anchor}
+[返回頂端]{#top}
 
