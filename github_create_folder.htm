@@ -30,7 +30,6 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.htm" style="color:white;">首頁</a></li>
-            <li><a href="https://github.com" style="color:white" target="_blank">GitHub 官網</a></li>
             <!-- 下拉式頁籤 1 -->
             <li class="dropdown"> 
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
@@ -148,6 +147,7 @@
                 </li>
               </ul>
             </li>
+            <li><a href="https://github.com" style="color:white" target="_blank">GitHub 官網</a></li>
           </ul>			  
           <form class="navbar-form navbar-right" action="http://www.google.com/search" method="get" target="_blank">
             <div class="form-group has-feedback">
@@ -163,8 +163,17 @@
     <!-- 頁首 -->
     <header>
       <div class="container">
-        <h1>建立網站儲存庫</h1>
-        <p class="lead">GitHub 帳號底下可建立不限數量的儲存庫 (repository), 儲存庫相當於電腦中的目錄或資料夾, 可以在資料夾下又建立子資料夾, 其層數同樣無限制. 但 GitHub 管理頁面並未提供單獨的建立資料夾按鈕, 它是透過建立子資料夾下的一個檔案 (習慣上通常先建立一個 README.md 檔案) 來建立資料夾.</p>
+        <h1>新增資料夾與上傳檔案</h1>
+        <p class="lead">每個儲存庫 (repository) 底下都可以建立不限層數的資料夾, 方便對儲存庫內的檔案分類整理. 網站中的檔案主要有下列幾種 :</p>
+        <ul class="lead">
+          <li>.htm 網頁檔</li>
+          <li>.css 樣式檔</li>
+          <li>.js 程式檔</li>
+          <li>.jpg/.png 圖片檔</li>
+          <li>.mp3/.ogg 音訊檔</li>
+          <li>.mp4 視訊檔</li>
+        </ul> 
+        <p class="lead">通常會在網站根目錄下建立不同的子目錄來分別儲存這些檔案, 例如 /css 用來存放樣式檔; /js 用來存放 Javascript 程式檔; /images 用來存放圖片檔; /media 用來存放音訊與視訊檔等. 不過 GitHub 管理頁面並未提供單獨的新增資料夾按鈕, 它是透過新增子資料夾下的一個檔案 (習慣上通常是 README.md 讀我檔案) 來建立資料夾.</p>
       </div>
     </header>    
 	
@@ -175,12 +184,16 @@
         <!-- 文章 -->
         <article>
           <div class="col-sm-8">
-            <h3>1. 連線 GitHub 官網</h3>
-            <p class="lead">首先連線 GitHub 官網首頁 
-              <a href="https://github.com" target="_blank">https://github.com</a>
-              , 然後按 'Sign up' 鈕進入註冊頁面 :
+            <h3>1. 新增資料夾</h3>
+            <p class="lead">下面以新增一個 /images 資料夾為例說明, 首先在網站儲存庫根目錄頁面按右上方的 "Add file", 於彈出選單中點選 "Create new file" :
             </p>
-            <img src="images/github-signup-1.jpg" class="img-responsive">
+            <img src="images/github-create-folder-1.jpg" class="img-responsive"><br>
+            <p class="lead">在網址後面的輸入框中填入欲建立的子目錄名稱例如 images, 然後在後面加一個右斜線, 後面會出現一個新的輸入框, 這樣這個 images 就會被當成是一個子目錄了 : 
+            </p>
+            <img src="images/github-create-folder-2.jpg" class="img-responsive"><br><br>
+            <p class="lead">請在此輸入框中填入 README.md, 這是一個可用 Markdown 語法編輯的純文字檔, GitHub 會將它轉譯成 HTML 網頁檔, 所以 Markdown 語法可說是簡化的網頁語言 : </p>
+            <img src="images/github-create-folder-3.jpg" class="img-responsive"><br>
+            <p class="lead">這就是透過新增 README.md 檔建立一個資料夾 images 的方法.</p>
             <hr>			
             <h3>2. 輸入 Email :</h3> 
             <p class="lead">輸入可收信的郵件信箱 (例如 Gmail), 稍後要收取驗證碼之用 : </p>
