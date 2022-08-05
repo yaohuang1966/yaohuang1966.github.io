@@ -160,17 +160,27 @@
     <!-- 頁首 -->
     <header>
       <div class="container">
-        <h1>新增資料夾與上傳檔案</h1>
-        <p class="lead">每個儲存庫 (repository) 底下都可以建立不限層數的資料夾, 方便對儲存庫內的檔案分類整理. 網站中的檔案主要有下列幾種 :</p>
-        <ul class="lead">
-          <li>.htm 網頁檔</li>
-          <li>.css 樣式檔</li>
-          <li>.js 程式檔</li>
-          <li>.jpg/.png 圖片檔</li>
-          <li>.mp3/.ogg 音訊檔</li>
-          <li>.mp4 視訊檔</li>
-        </ul> 
-        <p class="lead">通常會在網站根目錄下建立不同的子目錄來分別儲存這些檔案, 例如 /css 用來存放樣式檔; /js 用來存放 Javascript 程式檔; /images 用來存放圖片檔; /media 用來存放音訊與視訊檔等. 不過 GitHub 管理頁面並未提供單獨的新增資料夾按鈕, 它是透過新增子資料夾下的一個檔案 (習慣上通常是 README.md 讀我檔案) 來建立資料夾.</p>
+        <h1>新增首頁檔 index.htm</h1>
+        <p class="lead">首頁檔 index.htm 是連線網址時, 伺服器預設回應給客戶端 (即瀏覽器) 的 HTML 檔案, 例如在瀏覽器網址列輸入 yaohuang1966.github.io, 當 GitHub 伺服器收到客戶端的請求時, 就會在網站儲存庫根目錄下尋找首頁檔 index.htm 回送給瀏覽器. 如果找不到 index.htm, 但有找到 index.md 或 README.md, 則會將它翻譯成 HTML 檔回送給瀏覽器. HTML 檔是純文字檔案, 可用記事本或 WordPad 等軟體編輯, 存檔時要記得存成 utf-8 格式. 基本的 HTML 網頁結構如下 : </p>
+        <div class="col-sm-6">
+          <p class="lead text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &nbsp;&nbsp;&lt;head&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;我的網站 &lt;/title&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;&lt;/style&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;&lt;/script&gt;<br>
+          &nbsp;&nbsp;&lt;/head&gt;<br>
+          &nbsp;&nbsp;&lt;body&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;歡迎來到我的網站 !&lt;/h1&gt;<br>
+          &nbsp;&nbsp;&lt;/body&gt;<br>
+          &lt;/html&gt;
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <img src="images/web_page_html.jpg" class="img-responsive">
+        </div>
       </div>
     </header>    
 	
@@ -181,35 +191,30 @@
         <!-- 文章 -->
         <article>
           <div class="col-sm-8">
-            <h3>1. 新增資料夾</h3>
-            <p class="lead">下面以新增一個 /images 資料夾為例說明, 首先在網站儲存庫根目錄頁面按右上方的 "Add file", 於彈出選單中點選 "Create new file" :
+            <h3>1. 新增檔案 index.htm</h3>
+            <p class="lead">首先在網站儲存庫根目錄頁面按右上方的 "Add file", 於彈出選單中點選 "Create new file" 進入檔案編輯頁面 :
             </p>
-            <img src="images/github-create-folder-1.jpg" class="img-responsive"><br>
-            <p class="lead">在網址後面的輸入框中填入欲建立的子目錄名稱例如 images, 然後在後面加一個右斜線, 後面會出現一個新的輸入框, 這樣這個 images 就會被當成是一個子目錄了 : 
+            <img src="images/github-create-index-1.jpg" class="img-responsive"><br>
+            <p class="lead">在網址後面的輸入框中填入 index.htm, 再將上面的 HTML 原始碼複製貼上, 然後按底下的 "Commit change" 鈕新增檔案 : 
             </p>
-            <img src="images/github-create-folder-2.jpg" class="img-responsive"><br><br>
-            <p class="lead">請在此輸入框中填入 README.md, 這是一個可用 Markdown 語法編輯的純文字檔, GitHub 會將它轉譯成 HTML 網頁檔, 所以 Markdown 語法可說是簡化的網頁語言 : </p>
-            <img src="images/github-create-folder-3.jpg" class="img-responsive"><br>
-            <p class="lead">然後按最底下的 "Commit changes" 鈕執行新增 : </p>
-            <img src="images/github-create-folder-4.jpg" class="img-responsive"><br>
-            <p class="lead">這就是透過新增 README.md 檔建立一個資料夾 images 的方法.</p>
+            <img src="images/github-create-index-2.jpg" class="img-responsive"><br>
+            <img src="images/github-create-index-3.jpg" class="img-responsive"><br><br>
+            <p class="lead">這樣在網站根目錄下就會出現 index.htm 檔了 : </p>
+            <img src="images/github-create-index-4.jpg" class="img-responsive"><br><br>
+            <p class="lead">除了像這樣直接在 GitHub 線上編輯網頁外, 也可以在本機電腦中先用文書軟體將網頁檔編輯好後, 以拉曳的方式上傳到網站儲存庫中.</p>
             <hr>			
-            <h3>2. 上傳檔案 :</h3> 
-            <p class="lead">以上傳圖檔到上面剛剛建立的 /images 目錄為例說明, 先點擊根目錄列表下的 images 進入此子目錄下 : </p>
-            <img src="images/github-upload-file-1.jpg" class="img-responsive"><br>
-            <p class="lead">按右上角的 "Add file", 點選 "Upload file" 進入檔案上傳頁面 :</p>
-            <img src="images/github-upload-file-2.jpg" class="img-responsive"><br>
-            <p class="lead">然後將要上傳的檔案拉曳到此頁面的空白區域 (例如 cat.jpg), 等上傳結束, 檔名會列在空白區底下 :</p>
-            <img src="images/github-upload-file-3.jpg" class="img-responsive">
-            <img src="images/github-upload-file-4.jpg" class="img-responsive"><br><br>
-            <p class="lead">最後必須按最底下的 "Commit change" 鈕才會真正結束檔案上傳 :</p>
-            <img src="images/github-upload-file-5.jpg" class="img-responsive"><br><br>
-            <p class="lead">可見 cat.jpg 已經出現在 /images 資料夾下的檔案列表中了. 接下來要為網站建立一個名為 index.htm 的首頁檔.</p>
+            <h3>2. 瀏覽網站 :</h3> 
+            <p class="lead">只要網站儲存庫根目錄下有 index.htm 檔, 這時用瀏覽器連線自己的網址就能看到 index.htm 的內容了 : </p>
+            <img src="images/github-create-index-5.jpg" class="img-responsive">
+            <hr>
+            <h3>3. 網站的架構 :</h3> 
+            <p class="lead">網站除了首頁 index.htm 外還可以有其他名稱的附屬網頁檔, 以公司的網站為例, 商品頁可以寫在 products.htm, 客服資料可以寫在 contacts.htm, 常見問答可寫在 faq.htm 等等, 這些網頁彼此之間可用 HTML 語法的超連結 a 標籤互相串連, 而且都可以由首頁 index.htm 跳轉. </p>
+            <img src="images/github-web-pages-structure.jpg" class="img-responsive">
             <hr>
             <nav>
               <ul class="list-inline text-center">
-                <li><a class="btn btn-info btn-lg" href="github_create_repository.htm">上一篇</a></li>
-                <li><a class="btn btn-info btn-lg" href="github_create_index.htm">下一篇</a></li>
+                <li><a class="btn btn-info btn-lg" href="github_create_folder.htm">上一篇</a></li>
+                <li><a class="btn btn-info btn-lg" href="html_h1_to_h6.htm">下一篇</a></li>
               </ul>
             </nav>
           </div>
