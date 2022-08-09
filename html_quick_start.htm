@@ -133,12 +133,23 @@
         &lt;strong style="COLOR: blue;"&gt;Hello&lt;/strong&gt;<br>
         &lt;strong style="COLOR: BLUE;"&gt;Hello&lt;/strong&gt;<br><br>
         不過習慣上通常一律採用小寫. 
-        <p class="lead">最後, 瀏覽器會把 HTML 網頁內容中的多個連續空格全部都只以一個空格顯示, 例如下面兩個元素中, 第二個的 Hello 與 World 之間有四個空格, 但實際上瀏覽器只會顯示一個空格, 所以這兩個的顯示效果完全一樣 : <br><br>
+        <p class="lead">還有一個特性是, 瀏覽器會把 HTML 網頁內容中的多個連續空格全部都只以一個空格顯示, 例如下面兩個元素中, 第二個的 Hello 與 World 之間有四個空格, 但實際上瀏覽器只會顯示一個空格, 所以這兩個的顯示效果完全一樣 : <br><br>
         &lt;strong&gt;Hello World&lt;/strong&gt;<br>
         &lt;strong&gt;Hello&nbsp;&nbsp;&nbsp;&nbsp;World&lt;/strong&gt;<br><br>
         如果要顯示多個空格, 必須以特殊符號 &amp;nbsp; 來表示一個空格, 所以要顯示上面第二個元素的四個空格效果必須這麼寫 :<br><br>
         &lt;strong&gt;Hello<mark style="color:blue;">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</mark>World&lt;/strong&gt;<br><br>
-        這樣 Hello 與 World 之間才會有四個空格.</p>  
+        這樣 Hello 與 World 之間才會有四個空格. 如果要在網頁中寫註解, 語法如下 :<br><br>
+        &lt;!-- 這是註解文字 --&gt;<br><br>
+        註解文字不會被顯示在瀏覽器中. 
+        </p> 
+        <a class="btn btn-primary" href="#paragraph">段落效果</a>
+        <a class="btn btn-primary" href="#text">文字效果</a>
+        <a class="btn btn-primary" href="#special_characters">特殊符號</a>
+        <a class="btn btn-primary" href="#group">群組</a>
+        <a class="btn btn-primary" href="#list">清單</a>
+        <a class="btn btn-primary" href="#table">表格</a>
+        <a class="btn btn-primary" href="#image">圖片</a>
+        <a class="btn btn-primary" href="#link">超連結</a>
       </div>
     </header>    
 	
@@ -149,7 +160,7 @@
         <!-- 文章 -->
         <article>
           <div class="col-sm-8">
-            <h3>1. 段落效果 : </h3>
+            <h3 id="paragraph" class="text-primary"><span class="bg-info">1. 段落效果 :</span></h3>
             <p class="lead">段落效果的標籤如下表, 它們使用一個區塊來顯示內容, 顯示完<mark>會自動跳行 (稱為 <b>paragraph</b> 效果)</mark>, 故所顯示之內容不會與後續的網頁內容黏在一起 : 
             </p>
             <img src="images/html_paragraph_effects.jpg" class="img-responsive"><br>
@@ -186,11 +197,11 @@ if (score &gt;= 60) {<br>
             </p><br>
             <p class="lead">請將 HTML 原始碼複製貼上存成一個 .htm 檔 (例如 test.htm), 直接點擊即可用瀏覽器看到效果, 結果如下 : 
             </p>
-            <img src="images/example-html-paragraph-effects.jpg" class="img-responsive">           
+            <img src="images/example-html-paragraph-effects.jpg" class="img-responsive"><br>
+            <p class="lead">可見 blockquote 標籤的內容不會保持格式 (例如不會跳行黏在一起, 若要跳行需使用 &lt;br&gt;), 而 pre 標籤則會保持格式 (適合用來顯示程式碼). </p>            
             <hr>
-            <h3>2. 文字效果 : </h3>
-            <p class="lead">文字效果的標籤如下表, 注意, 這些標籤在顯示內容後<mark>不會自動跳行 (稱為 <b>inline</b> 效果)</mark>, 會與後面的網頁內容黏在一起, 如果想要跳行, 可在後面添加 &lt;br&gt; (加一個就跳一行) : 
-            </p>
+            <h3 id="text" class="text-primary"><span class="bg-info">2. 文字效果 : </span></h3>
+            <p class="lead">文字效果的標籤如下表, 注意, 這些標籤在顯示內容後<mark>不會自動跳行 (稱為 <b>inline</b> 效果)</mark>, 會與後面的網頁內容黏在一起, 如果想要跳行, 可在後面添加 &lt;br&gt; (加一個就跳一行) :</p>
             <img src="images/html_text_effects.jpg" class="img-responsive"><br>
             <p class="lead">範例網頁測試連結如下 :<br><br>
             # <a href="examples/html_text_effects.htm" target="_blank">文字效果測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/html_text_effects.htm" target="_blank">原始碼</a>]</p><br>            
@@ -221,7 +232,7 @@ if (score &gt;= 60) {<br>
             </p>
             <img src="images/example-html-text-effects.jpg" class="img-responsive">            
             <hr>
-            <h3>3. 特殊符號 : </h3>
+            <h3 id="special_characters" class="text-primary"><span class="bg-info">3. 特殊符號 : </span></h3>
             <p class="lead">在網頁中有些符號不能直接使用, 例如 &lt; 與 &gt; 是標籤專用的角括號, 直接使用會被瀏覽器認為網頁格式不正確; 有些特殊符號如版權, 歐元, 美元, 日元等金融符號鍵盤無法輸入, 這些特殊符號在 HTML 中要用下表中的特殊表示法來輸入 :</p>
             <img src="images/html_character_entities.jpg" class="img-responsive"><br>
             <p class="lead">範例網頁測試連結如下 :<br><br>
@@ -252,7 +263,7 @@ if (score &gt;= 60) {<br>
             </p>
             <img src="images/example-html-character-entities.jpg" class="img-responsive">            
             <hr>
-            <h3>4. 群組 : </h3>
+            <h3 id="group" class="text-primary"><span class="bg-info">4. 群組 : </span></h3>
             <p class="lead">群組標籤只有兩個 : span 與 div, 只是用來將一群元素包在裡面以形成一個群組, 以便利用 id 或 class 屬性來套用特定樣式或用程式進行互動操作, 或者用 lang 屬性來指定此群組內網頁內容之語系. 很多框架例如 Bootstrap 就大量使用 div 套用套定樣式類別來排版. 兩者的差別只是, span 不會跳行 (inline 效果); 而 div 會跳行 (paragraph 效果).</p>
             <img src="images/html_group_tags.jpg" class="img-responsive"><br>
             <p class="lead">範例網頁測試連結如下 :<br><br>
@@ -279,7 +290,7 @@ if (score &gt;= 60) {<br>
             <p class="lead">可見 body 以下的三列 Hello World 以及兩個 span 元素因為都是行內 (inline) 效果, 故三者會黏在一起排成一列 (不會跳行); 而底下的兩個 div 元素為段落 (paragraph) 效果 (都會跳行), 第二個 div 還套用了 style 屬性來指定元素內容的顏色.
             </p>
             <hr>
-            <h3>5. 清單 : </h3>
+            <h3 id="list" class="text-primary"><span class="bg-info">5. 清單 : </span></h3>
             <p class="lead">HTML 的清單有三種, 即符號清單 (項目符號是圓點或方點), 編號清單 (項目符號是數字), 與定義清單 (無項目符號), 標籤結構如下表 :</p>
             <img src="images/html_list_tags.jpg" class="img-responsive"><br>
             <p class="lead">符號清單之 ul 標籤可以用 list-style-type 屬性來指定項目符號類型, 其值如下表所示 :</p>
@@ -378,7 +389,7 @@ if (score &gt;= 60) {<br>
             </p>
             <img src="images/example-html-defined-list.jpg" class="img-responsive"><br>
             <hr>
-            <h3>6. 表格 : </h3>
+            <h3 id="table" class="text-primary"><span class="bg-info">6. 表格 : </span></h3>
             <p class="lead">表格元素由下列標籤組成 : table, thead, tbody, tr, th 與 td 組成, 基本結構如下 :</p>
             <img src="images/html_table_structure.jpg" class="img-responsive"><br>
             <p class="lead">table 標籤可用的屬性如下 :</p>
@@ -389,7 +400,7 @@ if (score &gt;= 60) {<br>
             <img src="images/html_td_th_attributes.jpg" class="img-responsive"><br>
             <p class="lead">td 與 th 都是儲存格標籤, 差別只是 th 是專用於表頭的儲存格標籤而已 (會自動以置中粗體顯示), 其屬性中最常用的是 colspan, 用來表示要合併的連續欄位儲存格數目.<p> 
             <p class="lead">利用以上這些標籤的屬性就可以設計出較美觀的表格, 例如下面這個細框邊表格就是利用 table 標籤的 cellspacing (設為 1) 與 style 背景色 (設為 blue), 搭配 tr 標籤之 style 背景色 (設為 white) 達成的效果, 範例網頁測試連結如下 : <br><br>
-            # <a href="examples/html_group_tags.htm" target="_blank">文字效果測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/html_group_tags.htm" target="_blank">原始碼</a>]</p><br>            
+            # <a href="examples/html_group_tags.htm" target="_blank">表格測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/html_group_tags.htm" target="_blank">原始碼</a>]</p><br>            
             <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
 &lt;!DOCTYPE html&gt;<br>
 &lt;html&gt;<br>
@@ -427,7 +438,7 @@ if (score &gt;= 60) {<br>
             <img src="images/example-html-table.jpg" class="img-responsive"><br>
             <p class="lead">這就比原始陽春的表格好看多了.</p>
             <hr>
-            <h3>7. 圖片 : </h3>
+            <h3 id="image" class="text-primary"><span class="bg-info">7. 圖片 : </span></h3>
             <p class="lead">圖片標籤 img 為單一標籤 (沒有結束標籤), 其可用屬性如下 : </p>
             <img src="images/html_img_attributes.jpg" class="img-responsive"><br>
             <p class="lead">其中必要的是用來指定圖檔來源 src 屬性, 可用完整網址 URL 或相對路徑, 其餘屬性可有可無, 如果沒有指定 width 與 height 屬性, 則預設以圖片原始尺寸顯示; 也可以只指定 width 或 height, 則另一個會同比例縮放.</p>
@@ -469,36 +480,36 @@ if (score &gt;= 60) {<br>
             <img src="images/example-html-img-2.jpg" class="img-responsive"><br>
             <p class="lead">上面的圖片原尺寸都不小, 例如貓咪圖片 cat.jpg 解析度是 762x427, 上例將其寬度指定為 150px 或 200px, 若沒有指定 width 或 height 來加以限制的話會佔據大半個螢幕.</p>
             <hr>
-            <h3>8. 超連結 : </h3>
-            <p class="lead">在網頁中有些符號不能直接使用, 例如 &lt; 與 &gt; 是標籤專用的角括號, 直接使用會被瀏覽器認為網頁格式不正確; 有些特殊符號如版權, 歐元, 美元, 日元等金融符號鍵盤無法輸入, 這些特殊符號在 HTML 中要用下表中的特殊表示法來輸入 :</p>
-            <img src="images/html_character_entities.jpg" class="img-responsive"><br>
-            <p class="lead">範例網頁測試連結如下 :<br><br>
-            # <a href="examples/html_character_entities.htm" target="_blank">文字效果測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/html_character_entities.htm" target="_blank">原始碼</a>]</p><br>            
+            <h3 id="link" class="text-primary"><span class="bg-info">8. 超連結 : </span></h3>
+            <p class="lead">超連結 (Hyperlink) 是 HTML 之所以被稱為超文件 (Hypertext) 的最關鍵特性, 亦即它可在文件之間建立互聯關係. 不論是文字, 圖片, 或影像, 任何網頁元素都可以在外面嵌套一個 a 元素而建立與其他文件之超連結. </p>
+            <p class="lead">標籤 a 具有兩個最重要屬性 href 與 target, 其中 href 用來指向另一個文件 (目標網頁) 的 URL 位置 (或相對路徑), 也可以用 "#anchor_id" 指向該網頁內部的一個錨點 (anchor), anchor_id 是該錨點元素的 id 屬性值, 若未指明 anchor_id 而只寫 href="#", 則預設錨點為網頁最上方. </p> 
+            <img src="images/html_a_examples.jpg" class="img-responsive"><br>
+            <p class="lead">target 屬性用來指定目標網頁的開啟方式, 可用的值如下表 :</p>          
+            <p class="lead"><img src="images/html_a_targets.jpg" class="img-responsive"><br>
+            如果不指定 target 的話, 預設是 _self, 會在目前的視窗中開啟目標網頁 (即原網頁被替換掉), 如果要在新視窗中開啟目標網頁則要設為 _blank.</p>
+            <p class="lead">範例網頁測試連結如下 :<br><br>  
+            # <a href="examples/html_a_link.htm" target="_blank">超連結測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/html_a_link.htm" target="_blank">原始碼</a>]</p><br>            
             <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
 &lt;!DOCTYPE html&gt;<br>
 &lt;html&gt;<br>
 &nbsp;&nbsp;&lt;head&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;段落效果&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;超連結&lt;/title&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
 &nbsp;&nbsp;&lt;/head&gt;<br>
 &nbsp;&nbsp;&lt;body&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;小於&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&gt;大於&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&且&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;"雙引號&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'單引號&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;半形空白&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;¢美元一分&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;£英鎊符號&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;€歐元符號&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;©版權符號&lt;br&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;®註冊商標&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="anchor_id"&gt;指定錨點&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- 連結外部網址 (target="_self" 取代) --&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://www.google.com.tw"&gt;前往 Google (在目前視窗開啟)&lt;/a&gt;&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- 連結外部網址 (target="_blank" 開新視窗) --&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://www.google.com.tw" target="_blank"&gt;前往 Google (在新視窗開啟)&lt;/a&gt;&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- 連結內部錨點 --&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#anchor_id"&gt;前往指定錨點&lt;/a&gt;<br>
 &nbsp;&nbsp;&lt;/body&gt;<br>
 &lt;/html&gt;<br>
             </p><br>
-            <p class="lead">請將 HTML 原始碼複製貼上存成一個 .htm 檔 (例如 test.htm), 直接點擊即可用瀏覽器看到效果, 結果如下 : 
-            </p>
-            <img src="images/example-html-character-entities.jpg" class="img-responsive">            
+            <p class="lead">請將 HTML 原始碼複製貼上存成一個 .htm 檔 (例如 test.htm), 直接點擊即可用瀏覽器看到效果, 結果如下 :</p>
+            <img src="images/example-html-a-link.jpg" class="img-responsive">
+            <p class="lead">不過, 由於測試網頁太短, 按 "前往指定錨點" 會看不出效果. </p>
             <hr>
             <nav>
               <ul class="list-inline text-center">
