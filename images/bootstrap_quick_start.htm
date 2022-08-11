@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用 GitHub 輕鬆架站</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid" style="background:#428bca"><!-- 可更改背景顏色 -->
+        <!-- 導覽列的頁首 -->
+        <div class="navbar-header">          
+          <a class="navbar-brand" href="#" style="color:white">
+            <img src="images/logo.png">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">導覽按鈕</span>
+            <span class="icon-bar" style="background:white"></span>
+            <span class="icon-bar" style="background:white"></span>
+            <span class="icon-bar" style="background:white"></span>
+          </button>
+        </div>		
+        <!-- 導覽列的項目 -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.htm" style="color:white;">首頁</a></li>
+            <!-- 下拉式頁籤 1 -->
+            <li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                <label>GitHub 操作</label>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" style="background:white;">
+                <li>
+                  <a href="github_sign_up.htm">註冊 GitHub 帳號</a>
+                </li>
+                <li>
+                  <a href="github_create_repository.htm">建立網站儲存庫 (Repository)</a>
+                </li>
+                <li>
+                  <a href="github_create_folder.htm">建立資料夾與上傳檔案</a>
+                </li>
+                <li>
+                  <a href="github_create_index.htm">建立首頁檔 index.htm</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="html_quick_start.htm" style="color:white">HTML 速成</a></li>
+            <!-- 下拉式頁籤 2 -->
+            <li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                <label>Bootstrap 範例</label>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" style="background:white;">
+                <li>
+                  <a href="bootstrap_button.htm">按鈕樣式</a>
+                </li>
+                <li>
+                  <a href="bootstrap_text.htm">文字樣式</a>
+                </li>
+                <li>
+                  <a href="bootstrap_image.htm">圖片樣式</a>
+                </li>
+                <li>
+                  <a href="bootstrap_icon.htm">小圖示樣式</a>
+                </li>
+                <li>
+                  <a href="html_button_menu.htm">按鈕選單</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 下拉式頁籤 3 -->
+            <li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                <label>常用工具</label>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" style="background:white;">
+                <li>
+                  <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML 語法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS 語法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/js/default.asp" target="_blank">Javascript 語法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/js/default.asp" target="_blank">Bootstrap 3 用法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">顏色代碼查詢</a>
+                </li>
+                <li>
+                  <a href="https://tw.123rf.com/tools/bgremove/" target="_blank">線上圖檔去背</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="https://github.com" style="color:white" target="_blank">GitHub 官網</a></li>
+          </ul>  
+          <form class="navbar-form navbar-right" action="http://www.google.com/search" method="get" target="_blank">
+            <div class="form-group has-feedback">
+              <input type="search" class="form-control" placeholder="請輸入">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 頁首 -->
+    <header>
+      <div class="container">
+        <h1>Bootstrap 簡介 :</h1>
+        <p class="lead">
+        <p class="lead">Bootstrap 最早是 Twitter 工程師 Mark Otto 和 Jacob Thornton 所開發, 原來叫做 Twitter Blueprint, 其出發點是要發展出一個可以保持介面一致的網頁前台框架, 此專案於 2011 年開放原始碼, 並成為 GitHub 上按讚 (即 Starred) 次數第二高的專案, 也是目前最受歡迎的跨瀏覽器自適應 (或響應式, Responsive Web Design) 網頁開發框架, 目前由 Bootstrap Core Team 維護.</p>
+        <p class="lead">Bootstrap 並非單獨可運作, 因為其動態顯示功能是依賴另一個框架 jQuery , 因此使用時除了 Bootstrap 函式庫外還需要 jQuery 函式庫. Bootstrap 目前最新版本為第 5 版, 但以下範例使用的是很穩定的 3.3.7 版, jQuery 則是使用 3.2.1 版. 這些函式庫 (.js 檔) 與搭配的樣式表 (.css 檔) 可直接使用存放於雲端的檔案庫 (稱為 CDN) 供檔, 用 link 與 script 標籤匯入到網頁中使用, 網頁範本如下  :</p>
+        <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;<strong>link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br></strong>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>       
+        </p><br>
+        <p class="lead">也可以將這四個檔案下載後, 分別上傳到 GitHub 網站儲存庫的 /js 與 /css 子目錄下, 由自己的網站提供函式庫, 網頁模板如下 : </p>
+        <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;<strong>link rel="stylesheet" href="css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;<br></strong>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>       
+        </p><br>
+        <p class="lead">Bootstrap 定義了許多樣式類別, 可讓使用者直接套用在HTML 標籤的 class 屬性上, 藉此改變原始 HTML 網頁元素的外觀, 讓缺乏版面美感的人也可以設計出美美的網頁.
+        </p><br> 
+        <a class="btn btn-primary" href="#grid">網格排版</a>
+        <a class="btn btn-primary" href="#button">按鈕樣式</a>
+        <a class="btn btn-primary" href="#text">文字樣式</a>
+        <a class="btn btn-primary" href="#group">圖片樣式</a>
+        <a class="btn btn-primary" href="#list">小圖示樣式</a>
+        <a class="btn btn-primary" href="#table">按鈕選單</a>
+      </div>
+    </header>    
+	
+    <!-- 內容區 -->
+    <hr>  
+    <div class="container">	  
+      <div class="row">
+        <!-- 文章 -->
+        <article>
+          <div class="col-sm-8">
+            <h3 id="paragraph" class="text-primary"><span class="bg-info">1. 網格排版 :</span></h3>
+            <p class="lead">Bootstrap 透過其網格系統 (grid system) 結構, 讓前端設計師開發在各種裝置 (手機, 平板, 桌機) 均可瀏覽以適當滿面呈現的網頁內容, 當內容寬度超過螢幕時會自動縮小或往下流動, 不會像原始網頁那樣出現卷軸, 此即所謂自適應 (responsive) 網頁設計. 網格系統將網頁寬度橫向分割成的 12 個欄位 (column), 但可依需要合併網格; 縱向則由設計者自行指定列數.
+            </p>
+            <img src="images/bootstrap_grid_structure.jpg" class="img-responsive"><br>
+            <p class="lead">Bootstrap 的網格結構由兩層 div 元素組成, 第一層 (外層) 的 div 樣式類別 "rows" 用來宣告列, 第二層 (內層) 的 div 則用來宣告欄, 其樣式類別名稱以 "col-" 開頭, 名稱格式為 <span class='bg-info'>"col-尺寸-網格數"</span>, 其中尺寸可視螢幕大小來挑選適當的名稱, 網格數用來指定該欄所占網格數目 (1~12, 大於 1 表示表示合併網格), 這在規劃網頁版面時非常好用. 可用的樣式類別名稱如下表 :</p>
+            <img src="images/bootstrap_grid_classes.jpg" class="img-responsive"><br>
+            <p class="lead">可見 Bootstrap 為各種螢幕尺寸定義了以 col 開頭的 5 種樣式類別, 每個欄位可同時指定多種尺寸之樣式類別, Bootstrap 會依螢幕的尺寸自動選擇套用, 例如 class="col-md-4 col-xs-6" 表示當瀏覽器是中型寬度時 (桌機 md) 會套用 col-md-4 樣式 (此欄位會合併 4 個儲存格); 當瀏覽器是超小型寬度時 (手機 xs) 會套用 col-xs-6 樣式 (此欄位會合併 6 個儲存格), 故只要指定適當的樣式類別組合即可達成自適應網頁的效果, 不論在哪種裝置都能以適當版面呈現網頁內容.</p>
+            <p class="lead">例如下面的 2*2 版面設計有兩列 (兩個樣式類別為 rows 的外層 div), 每列都有兩欄 (兩個樣式類別為 col-md-x 的內層 div). 第一列的欄寬是 4:8 (分別合併 4 個網格與 8 個網格), 第二列的欄寬是 6:6 (分別合併 6 個網格與 6 個網格) : </p>
+            <img src="images/bootstrap_grid_primitive.jpg" class="img-responsive"><br>
+            <p class="lead">請注意, 網格本身只是 div 元素, 預設並沒有邊框, 上圖是為了顯示版面配置情形額外加上邊框. 其次, 版面配置所使用的尺寸應該一致, 不要這欄使用 md, 下一欄卻使用 xs, 如果使用 md 就全部使用 md, 即使是適應性設計要套用多種尺寸之樣式, 也必須每個欄位一致才行.</p>
+            <p class="lead">不過實務上通常會將上面的網格結構外面再用一個樣式類別為 container 的 div 元素包起來, 這樣網格版面才會與瀏覽器的邊框有一個留白 (padding), 否則網格內的網頁內容會太靠近瀏覽器邊框而影響視覺效果 :</p>
+            <img src="images/bootstrap_grid_with_container.jpg" class="img-responsive"><br>
+            <p class="lead">另外, Bootstrap 還替上面每一種網格樣式類別提供了偏移網格樣式類別, 其名稱格式為 <span class='bg-info'>"col-尺寸-offset-網格數"</span>, 例如 class="col-md-offset-4 col-md-4" 表示此欄位實際版面 col-md-4 前面要插入 4 個佔位用的空白網格, 欄位實際仍占用 8 個網格, 但網頁內容會顯示在後面那 4 個合併網格中. <span class='bg-info'>偏移樣式類別的順序不重要</span>, 也可以寫成 class="col-md-4 col-md-offset-4", 效果是一樣的. </p>
+            <p class="lead">範例網頁測試連結如下 :<br><br>
+            # <a href="examples/bootstrap_grid_1.htm" target="_blank">網格排版測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_grid_1.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;網格排版&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bg-info">div[class|="col"] {background-color:cyan; border: 1px solid black}</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="rows"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-12"&gt;欄位 1-1&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="rows"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<span class="bg-info">col-md-offset-4</span> col-md-4"&gt;欄位 2-1&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-4"&gt;欄位 2-2&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="rows"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-4"&gt;欄位 3-1&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-8"&gt;欄位 3-2&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="rows"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-3"&gt;欄位 4-1&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-6 <span class="bg-info">col-md-offset-3</span>"&gt;欄位 4-2&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="rows"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-2"&gt;欄位 5-1&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-3"&gt;欄位 5-2&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-7"&gt;欄位 5-3&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">注意, 此例為了顯示版面中的網格, 所以特別在 head 內添加了一個 style 標籤, 將所有 class 屬性值以 'col' 開頭之元素邊框顏色設為 cyan, 網格邊框預設是無顏色的. 請將 HTML 原始碼複製貼上存成一個 .htm 檔 (例如 test.htm), 直接點擊即可用瀏覽器看到效果, 結果如下 : 
+            </p>
+            <img src="images/example-bootstrap-grid-1.jpg" class="img-responsive"><br>
+            <p class="lead">此例版面有 5 列, 其中第 4 列的第 1 欄與第 4 列的第 2 欄有設定偏移欄位, 可見一個欄位中的 offset 樣式類別放置順序部論在前在後都是一樣的. </p>            
+            <hr>
+            <nav>
+              <ul class="list-inline text-center">
+                <li><a class="btn btn-info btn-lg" href="#">上一篇</a></li>
+                <li><a class="btn btn-info btn-lg" href="#">下一篇</a></li>
+              </ul>
+            </nav>
+          </div>
+        </article>
+
+        <!-- 側邊欄 --> 		
+        <aside>
+          <div class="col-sm-3 col-sm-offset-1">
+            <!-- 短文側邊框範例 -->
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 style="text-align:center;">前端座右銘</h3>
+              </div>
+              <div class="panel-body">
+                <p>網頁設計無撇步, 只要懂一些 HTML, 善用 Copy & Paste 就能讓您 "from zero to hero". </p>
+              </div>
+            </div>
+		  
+            <!-- 連結清單側邊框範例-->
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 style="text-align:center;">網頁設計工具</h3>
+              </div>
+              <div class="panel-body">
+                <ol class="list-unstyled">
+                  <li>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML 語法教學</a>
+                  </li>
+                  <li>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS 語法教學</a>
+                  </li>
+                  <li>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">Javascript 語法教學</a>
+                  </li>
+                  <li>
+                    <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">顏色代碼查詢</a>
+                  </li>
+                  <li>
+                    <a href="https://tw.123rf.com/tools/bgremove/" target="_blank">線上圖檔去背</a>
+                  </li>
+                  <li>
+                    <a href="https://picpick.app/zh-tw/" target="_blank">Picpick 螢幕抓圖</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </aside>		
+      </div>
+    </div>    
+	
+    <!-- 頁尾 -->
+    <hr> 	
+    <footer>  
+      <div class="container">
+        <p>&copy; 2022 用 GitHub 輕鬆架站&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+        <p class="text-right"><a href="#">Back to top</a></p>
+      </div>	
+    </footer>
+  </body>	
+</html>    
