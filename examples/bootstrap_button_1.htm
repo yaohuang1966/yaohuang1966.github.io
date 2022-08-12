@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
+    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <button class="btn btn-primary" onclick="set_href()">Button 按鈕</button>
+    <input type="button" class="btn btn-primary" value="Input 按鈕" onclick="open_url()">
+    <a class="btn btn-primary" href="https://www.google.com.tw" target="_blank" onclick="">超連結按鈕</a>
+  </body>
+  <script>
+    function set_href(){
+      window.location.href="https://www.google.com.tw";
+      }
+    function open_url(){
+      window.open("https://www.google.com.tw", "_blank");
+      }
+  </script>
+</html>
