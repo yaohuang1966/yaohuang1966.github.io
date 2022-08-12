@@ -155,6 +155,8 @@
         <p class="lead">Bootstrap 定義了許多樣式類別, 可讓使用者直接套用在HTML 標籤的 class 屬性上, 藉此改變原始 HTML 網頁元素的外觀, 讓缺乏版面美感的人也可以設計出美美的網頁.
         </p><br> 
         <a class="btn btn-primary" href="#grid">網格排版</a>
+        <a class="btn btn-primary" href="#color">顏色樣式</a>
+        <a class="btn btn-primary" href="#glyphicon">文字圖示</a>
         <a class="btn btn-primary" href="#button">按鈕樣式</a>
         <a class="btn btn-primary" href="#text">文字樣式</a>
         <a class="btn btn-primary" href="#group">圖片樣式</a>
@@ -256,7 +258,84 @@
             </p>
             <img src="images/example-bootstrap-grid-2.jpg" class="img-responsive"><br>
             <hr>
-            <h3 id="paragraph" class="text-primary"><span class="bg-info">2. 按鈕樣式 :</span></h3>
+            <h3 id="color" class="text-primary"><span class="bg-info">2. 色彩樣式 :</span></h3>
+            <p class="lead">色彩樣式類別可以套用任何 HTML 元素上, 常用在容器標籤 span 與 div) 或 p, h1~h6, strong 等文字標籤以設定其顏色. 網頁中的色彩分為前景 (forground) 與背景 (background), 前景就是文字本身的顏色, 背景則是其底色. Bootstrap 提供如下前景與背景之色彩樣式類別, 使用者無須使用 CSS 即可得到色調一致的顏色配置 :</p>
+            <img src="images/bootstrap_color_classes.jpg" class="img-responsive"><br>
+            <p class="lead">前景與背景樣式類別可以同時套用, 例如 class="bg-danger text-primary" 為同時套用紅色背景與藍色前景, 範例如下 : </p>
+            <p class="lead"># <a href="examples/bootstrap_color_classes.htm" target="_blank">色彩樣式測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_color_classes.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-muted"&gt;Hello World (text-muted)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-primary"&gt;Hello World (text-primary)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-success"&gt;Hello World (text-success)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-info"&gt;Hello World (text-info)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-warning"&gt;Hello World (text-warning)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-danger"&gt;Hello World (text-danger)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-primary"&gt;Hello World (bg-primary)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-success"&gt;Hello World (bg-success)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-info"&gt;Hello World (bg-info)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-warning"&gt;Hello World (bg-warning)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-danger"&gt;Hello World (bg-danger)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">此例在 p 標籤上分別套用前景與背景色, 結果如下 :</p>
+            <img src="images/example-bootstrap-color-classes.jpg" class="img-responsive"><br>
+            <h3 id="color" class="text-primary"><span class="bg-info">2. 色彩樣式 :</span></h3>
+            <p class="lead">色彩樣式類別主要用在容器標籤 (span 與 div), 或文字標籤 (p, h1~h6, strong 等) 以設定其內容之顏色. 網頁中的色彩分為前景 (foreground) 與背景 (background), 前景就是文字本身的顏色, 背景則是其底色. Bootstrap 提供如下前景與背景之色彩樣式類別, 使用者無須使用 CSS 即可得到色調一致的顏色配置 :</p>
+            <img src="images/bootstrap_color_classes.jpg" class="img-responsive"><br>
+            <p class="lead">前景與背景樣式類別可以同時套用, 例如 class="bg-danger text-primary" 為同時套用紅色背景與藍色前景, 範例如下 : </p>
+            <p class="lead"># <a href="examples/bootstrap_color_classes.htm" target="_blank">色彩樣式測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_color_classes.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-muted"&gt;Hello World (text-muted)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-primary"&gt;Hello World (text-primary)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-success"&gt;Hello World (text-success)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-info"&gt;Hello World (text-info)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-warning"&gt;Hello World (text-warning)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-danger"&gt;Hello World (text-danger)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-primary"&gt;Hello World (bg-primary)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-success"&gt;Hello World (bg-success)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-info"&gt;Hello World (bg-info)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-warning"&gt;Hello World (bg-warning)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-danger"&gt;Hello World (bg-danger)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">此例在 p 標籤上分別套用前景與背景色, 結果如下 :</p>
+            <img src="images/example-bootstrap-color-classes.jpg" class="img-responsive"><br>
+            <h3 id="glyphicon" class="text-primary"><span class="bg-info">2. 文字圖示 :</span></h3>
+            <h3 id="button" class="text-primary"><span class="bg-info">3. 按鈕樣式 :</span></h3>
             <p class="lead">網頁中的按鈕有下列三種功能 : </p>
             <ul class="lead">
               <li>前往另一個網頁或錨點</li>
@@ -294,9 +373,64 @@
 &nbsp;&nbsp;&lt;/script&gt;<br>
 &lt;/html&gt;<br>
             </p><br>
-            <p class="lead">此例分別使用 button, input, 以及 a 個標籤來實作按鈕, 三者功能相同, 此處套用了 Bootstrap 的 btn 與 btn-primary 樣式類別, 故不論用哪個標籤製作按鈕, 外觀都一樣. 結果如下 : 
-            </p>
+            <p class="lead">此例分別使用 button, input, 以及 a 個標籤來實作按鈕, 三者雖然功能相同, 但靜態網頁主要使用按鈕來切換網頁, 使用超連結按鈕較方便. 上面範例中套用了 Bootstrap 的 btn 與 btn-primary 樣式類別, 故不論用哪個標籤製作按鈕, 外觀都一樣. 結果如下 :</p>
             <img src="images/example-bootstrap-button-1.jpg" class="img-responsive"><br>
+            <p class="lead">事實上 Bootstrap 為按鈕定義了如下表所示的樣式類別, 直接套用在 button, input, 或 a 標籤按鈕上即可美化其外觀 :</p>
+            <img src="images/bootstrap_button_classes.jpg" class="img-responsive"><br>
+            <p class="lead">其中 btn 類別是一定要先套用的, 然後再套用其他類別, 例如 class="btn btn-info", 如下面範例所示 :</p>
+            <p class="lead"># <a href="examples/bootstrap_button_2.htm" target="_blank">按鈕樣式測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_button_2.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-default"&gt;btn-default&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-primary"&gt;btn-primary&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-success"&gt;btn-success&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-info"&gt;btn-info&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-warning"&gt;btn-warning&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-danger"&gt;btn-danger&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-link"&gt;btn-link&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-default"&gt;預設按鈕&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-default btn-xs"&gt;超小按鈕&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-default btn-sm"&gt;小按鈕&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-default btn-lg"&gt;大按鈕&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-default btn-block"&gt;與父元素同寬之按鈕&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="btn btn-info"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;放入購物車&lt;/label&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="btn btn-success"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-phone" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;聯絡客服&lt;/label&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="btn btn-primary"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-home" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;回首頁&lt;/label&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="btn btn-warning"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-print" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;列印&lt;/label&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">此例展示了上表中各種按鈕樣式的效果, 還可以結合文字圖示 (glyphicon) 顯示於按鈕上, 結果如下 :</p>
+            <img src="images/example-bootstrap-button-2.jpg" class="img-responsive"><br>
             <hr>
             <nav>
               <ul class="list-inline text-center">
