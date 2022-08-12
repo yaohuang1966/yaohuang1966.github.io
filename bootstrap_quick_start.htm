@@ -155,7 +155,8 @@
         <p class="lead">Bootstrap 定義了許多樣式類別, 可讓使用者直接套用在HTML 標籤的 class 屬性上, 藉此改變原始 HTML 網頁元素的外觀, 讓缺乏版面美感的人也可以設計出美美的網頁.
         </p><br> 
         <a class="btn btn-primary" href="#grid">網格排版</a>
-        <a class="btn btn-primary" href="#color">顏色樣式</a>
+        <a class="btn btn-primary" href="#color">色彩樣式</a>
+        <a class="btn btn-primary" href="#text_effect">文字效果</a>
         <a class="btn btn-primary" href="#glyphicon">文字圖示</a>
         <a class="btn btn-primary" href="#button">按鈕樣式</a>
         <a class="btn btn-primary" href="#text">文字樣式</a>
@@ -296,11 +297,11 @@
             </p><br>
             <p class="lead">此例在 p 標籤上分別套用前景與背景色, 結果如下 :</p>
             <img src="images/example-bootstrap-color-classes.jpg" class="img-responsive"><br>
-            <h3 id="color" class="text-primary"><span class="bg-info">2. 色彩樣式 :</span></h3>
-            <p class="lead">色彩樣式類別主要用在容器標籤 (span 與 div), 或文字標籤 (p, h1~h6, strong 等) 以設定其內容之顏色. 網頁中的色彩分為前景 (foreground) 與背景 (background), 前景就是文字本身的顏色, 背景則是其底色. Bootstrap 提供如下前景與背景之色彩樣式類別, 使用者無須使用 CSS 即可得到色調一致的顏色配置 :</p>
-            <img src="images/bootstrap_color_classes.jpg" class="img-responsive"><br>
-            <p class="lead">前景與背景樣式類別可以同時套用, 例如 class="bg-danger text-primary" 為同時套用紅色背景與藍色前景, 範例如下 : </p>
-            <p class="lead"># <a href="examples/bootstrap_color_classes.htm" target="_blank">色彩樣式測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_color_classes.htm" target="_blank">原始碼</a>]</p><br>            
+            <h3 id="text_effect" class="text-primary"><span class="bg-info">3. 文字效果 :</span></h3>
+            <p class="lead">許多文字效果在 HTML 都必須用 CSS 樣式去設定, Bootstrap 將許多常用的文字效果製作成方便好用的樣式類別, 如下表所示 : :</p>
+            <img src="images/bootstrap_text_effect_classes.jpg" class="img-responsive"><br>
+            <p class="lead">這些樣式類別主要套用在文字標籤, 例如 p, h1~h6, 或容器標籤 span 與 div, 範例如下 : </p>
+            <p class="lead"># <a href="examples/bootstrap_text_effect_classes.htm" target="_blank">文字效果測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_text_effect_classes.htm" target="_blank">原始碼</a>]</p><br>            
             <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
 &lt;!DOCTYPE html&gt;<br>
 &lt;html&gt;<br>
@@ -315,27 +316,31 @@
 &nbsp;&nbsp;&lt;/head&gt;<br>
 &nbsp;&nbsp;&lt;body&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-muted"&gt;Hello World (text-muted)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-primary"&gt;Hello World (text-primary)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-success"&gt;Hello World (text-success)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-info"&gt;Hello World (text-info)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-warning"&gt;Hello World (text-warning)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-danger"&gt;Hello World (text-danger)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-left"&gt;Hello World (text-left)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-center"&gt;Hello World (text-center)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-right"&gt;Hello World (text-right)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-nowrap"&gt;Hello World Hello World Hello World Hello World Hello World  Hello World Hello World Hello World (text-justify)&lt;/p&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-primary"&gt;Hello World (bg-primary)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-success"&gt;Hello World (bg-success)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-info"&gt;Hello World (bg-info)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-warning"&gt;Hello World (bg-warning)&lt;/p&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="bg-danger"&gt;Hello World (bg-danger)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-lowercase"&gt;Hello World (text-lowercase)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-uppercase"&gt;Hello World (text-uppercase)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-capitalize"&gt;heLLo woRLd (text-capitalize)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-truncate"&gt;Hello World Hello World Hello World Hello World Hello World  Hello World Hello World Hello World (text-truncate)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-weight-bold"&gt;Hello World (font-weight-bold)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="font-weight-normal"&gt;Hello World (font-weight-normal)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="font-weight-light"&gt;Hello World (font-weight-light)&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-italic"&gt;Hello World (font-italic)&lt;/p&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
 &nbsp;&nbsp;&lt;/body&gt;<br>
 &lt;/html&gt;<br>
             </p><br>
-            <p class="lead">此例在 p 標籤上分別套用前景與背景色, 結果如下 :</p>
-            <img src="images/example-bootstrap-color-classes.jpg" class="img-responsive"><br>
-            <h3 id="glyphicon" class="text-primary"><span class="bg-info">2. 文字圖示 :</span></h3>
-            <h3 id="button" class="text-primary"><span class="bg-info">3. 按鈕樣式 :</span></h3>
+            <p class="lead">此例在 p 標籤上套上表之樣式類別, 結果如下 :</p><br>
+            <img src="images/example-bootstrap-text-effect-classes.jpg" class="img-responsive"><br>
+            <p class="lead">可見其中 text-truncate 以及 font- 開頭的樣式類別在 Bootstrap 3 沒有效果. </p><br>
+            <h3 id="glyphicon" class="text-primary"><span class="bg-info">4. 文字圖示 :</span></h3>
+            <h3 id="button" class="text-primary"><span class="bg-info">5. 按鈕樣式 :</span></h3>
             <p class="lead">網頁中的按鈕有下列三種功能 : </p>
             <ul class="lead">
               <li>前往另一個網頁或錨點</li>
