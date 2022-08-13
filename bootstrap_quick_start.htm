@@ -159,9 +159,8 @@
         <a class="btn btn-primary" href="#text_effect">文字效果</a>
         <a class="btn btn-primary" href="#glyphicon">文字圖示</a>
         <a class="btn btn-primary" href="#button">按鈕樣式</a>
-        <a class="btn btn-primary" href="#group">圖片樣式</a>
-        <a class="btn btn-primary" href="#list">小圖示樣式</a>
-        <a class="btn btn-primary" href="#table">按鈕選單</a>
+        <a class="btn btn-primary" href="#image">圖片樣式</a>
+        <a class="btn btn-primary" href="#table">表格樣式</a>
       </div>
     </header>    
 	
@@ -507,6 +506,65 @@
             </p><br>
             <p class="lead">此例展示了上表中各種按鈕樣式的效果, 還可以結合文字圖示 (glyphicon) 顯示於按鈕上, 結果如下 :</p>
             <img src="images/example-bootstrap-button-2.jpg" class="img-responsive"><br>
+            <h3 id="image" class="text-primary"><span class="bg-info">6. 圖片樣式 :</span></h3>
+            <p class="lead">HTML 使用 img 標籤來顯示圖片, 圖檔來源以 src 屬性指定, 這樣的原始 HTML 圖片都是以方形來呈現的, Bootstrap 提供了如下幾個好用的圖片樣式類別, 直接用 class 屬性套用即可展現豐富的變化 :</p>
+            <img src="images/bootstrap_image_classes.jpg" class="img-responsive"><br>
+            <p class="lead">img 標籤中的圖片若不使用 width 與 height 屬性限制其在網頁上的大小, 則預設會以圖片原始尺寸來顯示, 當圖片很大時就會出現捲軸. 套用 img-responsive 樣式類別就可使圖片在不同螢幕大小的裝置中自動縮放 (自適應 responsive), 例如下面的範例 :</p>
+            <p class="lead"># <a href="examples/bootstrap_image_1.htm" target="_blank">圖片樣式測試 (自適應)</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_image_1.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="img-responsive" src="../images/cat.jpg"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">此例之圖檔 cat.jpg 解析度為 761*427, 當在比這尺寸大的螢幕瀏覽網頁時, 此圖片會以原始尺寸完整呈現; 但若在手機等較小螢幕顯示時, 圖片會因為 img-responsive 樣式而自動縮小, 此即自適應效果, 結果如下 :</p><br>
+            <img src="images/cat.jpg" class="img-responsive"><br><br>
+            <p class="lead">下面使用影像處理界知名的 <a href="" target="_blank">Lenna 圖</a>為例測試其餘四個圖片樣式, 範例網頁如下 :</p> 
+            <p class="lead"># <a href="examples/bootstrap_image_2.htm" target="_blank">圖片樣式測試 (圓角, 圓形, 縮圖, 置中)</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_image_2.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="img-responsive" src="../images/cat.jpg"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="img-rounded" src="../images/Lenna.jpg"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="img-circle" src="../images/Lenna.jpg"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="img-thumbnail" src="../images/Lenna.jpg"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../images/Lenna.jpg"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="center-block" src="../images/Lenna.jpg"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">此例用了兩個容器來放置圖片, 第一個容器展示圓角, 圓形, 與縮圖的效果; 第二個容器則展示置中效果, 結果如下 :</p><br>
+            <img src="images/example-bootstrap-image-2.jpg" class="img-responsive"><br><br>
+            <p class="lead">這些效果如果使用 CSS 來做很麻煩, 而用 Bootstrap 則只要套用圖片樣式即可輕鬆達成.</p><br>
             <hr>
             <nav>
               <ul class="list-inline text-center">
