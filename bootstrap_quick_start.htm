@@ -339,6 +339,78 @@
             <img src="images/example-bootstrap-text-effect-classes.jpg" class="img-responsive"><br>
             <p class="lead">可見其中 text-truncate 以及 font- 開頭的樣式類別在 Bootstrap 3 沒有效果. </p><br>
             <h3 id="glyphicon" class="text-primary"><span class="bg-info">4. 文字圖示 :</span></h3>
+            <p class="lead">圖示 (icon) 在 UI 設計上扮演非常重要的角色, 通常用在工具列或操作按鈕上. 設計良好的圖示可讓使用者第一眼就能了解按鈕或選項的功能. Bootstrap 提供了來自 Glyphicon Halsling 超過 250 種的文字圖示 (glyphicon), 參考 :</p>
+            <p class="lead"># <a href="https://getbootstrap.com/docs/3.3/components/" target="_blank">https://getbootstrap.com/docs/3.3/components/</a></p>
+            <img src="images/bootstrap_glyphicon_components.jpg" class="img-responsive"><br>
+            <p class="lead">這些樣式類別名稱都是以 glyphicon- 開頭, 用法如下 :
+              <ul class="lead">
+                <li>通常以 span 元素為容器.</li>
+                <li>最好加上 aria-hidden="true" 無障礙屬性.</li> 
+                <li>先套用基礎類別 glyphicon 再套用以 glyphicon- 開頭的類別.</li>
+              </ul>
+            </p>
+            <p class="lead">例如下面的 span 元素會顯示一個 email 圖示 :</p>
+            <p class="lead">&lt;span class="glyphicon glyphicon-email" aria-hidden="true"&gt;&lt;/span&gt;</p>
+            <p class="lead">此處 aria-hidden 屬性設為 true 之目的是, 由於 Glyphicon 圖示乃 Unicode 編碼文字, 網頁朗讀器會以為是文字而進行解讀, 但卻讀出令人無法理解的內容, 這會讓使用者感到困惑而影響網頁的無障礙親和性 (affinity). 範例網頁如下 :</p> 
+            <p class="lead"># <a href="examples/bootstrap_glyphicon.htm" target="_blank">文字圖示測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_glyphicon.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-email" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-search" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-trash" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-home" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-refresh" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-print" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-wrench" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-question-sign" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-info-sign" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-warning-sign" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-ok-sign" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-remove-sign" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-plus-sign" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-minus-sign" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-arrow-left" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-arrow-right" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-arrow-up" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-arrow-down" aria-hidden="true"&gt;&lt;/span&gt;&lt;br&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-volume-on" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-volume-off" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-volume-up" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-volume-down" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-play-circle" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-file" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-duplicate" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-qrcode" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-paperclip" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-send" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-fullscreen" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-dashboard" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-open" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-comment" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-share-alt" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"&gt;&lt;/span&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">此例展示了最常用的 36 個文字圖示樣式類別, 結果如下 :</p><br>
+            <img src="images/example-bootstrap-glyphicon.jpg" class="img-responsive"><br><br>
             <h3 id="button" class="text-primary"><span class="bg-info">5. 按鈕樣式 :</span></h3>
             <p class="lead">網頁中的按鈕有下列三種功能 : </p>
             <ul class="lead">
