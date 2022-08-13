@@ -805,7 +805,7 @@
             <p class="lead">結果如下 :</p><br>
             <img src="images/example-bootstrap-table-3.jpg" class="img-responsive"><br><br>
             <h3 id="alert" class="text-primary"><span class="bg-info">8. 警示區塊 :</span></h3>
-            <p class="lead">此元件使用具有醒目背景色的 div 區塊來顯示重要訊息, 主要套用 alert 與下列五個樣式類別, 並指定 role="alert" 屬性 : :</p>
+            <p class="lead">警示區塊使用具有醒目背景色的 div 區塊來顯示重要訊息, 主要套用 alert 與下列五個樣式類別, 並指定 role="alert" 屬性 :</p>
             <img src="images/bootstrap_alert_classes.jpg" class="img-responsive"><br>
             <p class="lead">這些 div 外面再用 class="container" 的 div 區塊包起來, 基本結構如下 :</p>
             <img src="images/bootstrap_alert_structure.jpg" class="img-responsive"><br>
@@ -842,8 +842,66 @@
 &lt;/html&gt;<br>
             </p><br>
             <p class="lead">結果如下 :</p><br>
-            <img src="images/example-bootstrap-slert.jpg" class="img-responsive"><br><br>
+            <img src="images/example-bootstrap-alert.jpg" class="img-responsive"><br><br>
             <p class="lead">警示區塊通常用來做為快訊或警告之用.</p><br>
+            <h3 id="panel" class="text-primary"><span class="bg-info">9. 面板區塊 :</span></h3>
+            <p class="lead">面板也是像上面 alert 一樣的區塊, 但它除了主體 (body) 外還多出板首 (heading) 板尾 (footer) 兩部分, 不過首尾都是可有可無的. 基本結構由兩層 div 構成, 內層是由 heading, body,與 footer 三個樣式的 div 疊成, 外層 div 需套用 panel 與下列四種背景色樣式類別 : </p>
+            <img src="images/bootstrap_panel_classes.jpg" class="img-responsive"><br>
+            <p class="lead">這些 div 外面再用 class="container" 的 div 區塊包起來, 基本結構如下 :</p>
+            <img src="images/bootstrap_panel_structure.jpg" class="img-responsive"><br>
+            <p class="lead">範例網頁如下 :</p>
+            <p class="lead"># <a href="examples/bootstrap_panel.htm" target="_blank">面板區塊測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_panel.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel-default"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-heading"&gt;面板板首 (default)&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板主體&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板板尾&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel-primary"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-heading"&gt;面板板首 (primary)&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板主體&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板板尾&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel-success"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-heading"&gt;面板板首 (success)&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板主體&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板板尾&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel-info"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-heading"&gt;面板板首 (info)&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板主體&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板板尾&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel-warning"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-heading"&gt;面板板首 (warning)&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板主體&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板板尾&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel panel-danger"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-heading"&gt;面板板首 (danger)&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板主體&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="panel-body"&gt;面板板尾&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">結果如下 :</p><br>
+            <img src="images/example-bootstrap-panel.jpg" class="img-responsive"><br><br>
+            <p class="lead">面板通常用來做為區塊文章之用, 板尾通常不使用.</p><br>
             <hr>
             <nav>
               <ul class="list-inline text-center">
