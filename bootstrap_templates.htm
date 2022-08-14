@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用 GitHub 輕鬆架站</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid" style="background:#428bca"><!-- 可更改背景顏色 -->
+        <!-- 導覽列的頁首 -->
+        <div class="navbar-header">          
+          <a class="navbar-brand" href="#" style="color:white">
+            <img src="images/logo.png">
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">導覽按鈕</span>
+            <span class="icon-bar" style="background:white"></span>
+            <span class="icon-bar" style="background:white"></span>
+            <span class="icon-bar" style="background:white"></span>
+          </button>
+        </div>		
+        <!-- 導覽列的項目 -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.htm" style="color:white;">首頁</a></li>
+            <!-- 下拉式頁籤 1 -->
+            <li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                <label>GitHub 操作</label>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" style="background:white;">
+                <li>
+                  <a href="github_sign_up.htm">註冊 GitHub 帳號</a>
+                </li>
+                <li>
+                  <a href="github_create_repository.htm">建立網站儲存庫 (Repository)</a>
+                </li>
+                <li>
+                  <a href="github_create_folder.htm">建立資料夾與上傳檔案</a>
+                </li>
+                <li>
+                  <a href="github_create_index.htm">建立首頁檔 index.htm</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 下拉式頁籤 2 -->
+            <li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                <label>教學文件</label>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" style="background:white;">
+                <li>
+                  <a href="html_quick_start.htm">HTML 範例</a>
+                </li>
+                <li>
+                  <a href="bootstrap_quick_start.htm">Bootstrap 範例</a>
+                </li>
+                <li>
+                  <a href="bootstrap_templates.htm">Bootstrap 架站範本</a>
+                </li>
+                <li>
+                  <a href="#">CSS 範例</a>
+                </li>
+                <li>
+                  <a href="#">Javascript 範例</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 下拉式頁籤 3 -->
+            <li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">
+                <label>常用工具</label>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" style="background:white;">
+                <li>
+                  <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML 語法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS 語法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/js/default.asp" target="_blank">Javascript 語法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/js/default.asp" target="_blank">Bootstrap 3 用法</a>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">顏色代碼查詢</a>
+                </li>
+                <li>
+                  <a href="https://tw.123rf.com/tools/bgremove/" target="_blank">線上圖檔去背</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="https://github.com" style="color:white" target="_blank">GitHub 官網</a></li>
+          </ul>  
+          <form class="navbar-form navbar-right" action="http://www.google.com/search" method="get" target="_blank">
+            <div class="form-group has-feedback">
+              <input type="search" class="form-control" placeholder="請輸入">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 頁首 -->
+    <header>
+      <div class="container">
+        <h1>Bootstrap 架站範本 :</h1>
+        <p class="lead">
+        <p class="lead">雖然學過 Bootstrap 後即可從版面規劃開始從無到有設計網站, 但最快的方式是參考別人的網站架構來做變化. 以下是參考旗標出版的 "一步到位 RWD 網頁程式設計" 這本書中的範例修改為網頁範本 (或稱為模板), 只要填入自己的資料就可以快速製作出美美的個人網站. </p>
+      </div>
+    </header>    
+	
+    <!-- 內容區 -->
+    <hr>  
+    <div class="container">	  
+      <div class="row">
+        <!-- 文章 -->
+        <article>
+          <div class="col-sm-8">
+            <h3 id="grid" class="text-primary"><span class="bg-info">功能型網頁範本 :</span></h3>
+            <p class="lead">此範本取自 "一步到位 RWD 網頁程式設計" 一書的  "日光美食部落格", 本網站就是利用這個範本架出來的, 點擊下列超連結可瀏覽此模板與原始碼 : </p>            
+            <p class="lead"># <a href="https://yaohuang1966.github.io/bootstrap_template_3.htm" target="_blank">Bootstrap 網頁範本</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/bootstrap_template_3.htm" target="_blank">原始碼</a>]</p>
+            <img src="images/bootstrap_template_1.jpg" class="img-responsive"><br>
+            <p class="lead">可見此範本頁面上方導覽列已經預設了 3 個一般頁籤與 1 個下拉式頁籤, 一般頁籤原始碼如下, 只要修改 "您的頁籤?" 與 "您的網頁?" 即可, 不夠的話就複製一組 li 元素即可 :</p>
+            <img src="images/bootstrap_template_navbar_1.jpg" class="img-responsive"><br>
+            <p class="lead">下拉式頁籤部分原始碼如下, 它有兩處須修改, 一是下拉式標題部分 (即 label 標籤之內容), 另一個它底下收容的項目, 這部分改法語上面一般頁籤相同, 即修改 a 標籤的內容與 href 屬性. 如果要增加一組下拉式選單, 那就複製從 &lt;!-- 下拉式頁籤 ? --&gt; 開始的整組 li 元素即可 : </p>
+            <img src="images/bootstrap_template_navbar_2.jpg" class="img-responsive"><br>
+            <p class="lead">導覽列下方是網頁標題, 如果是首頁 index.htm 可在此打上網站名稱與簡短說明, 如果不是首頁就打上該頁之大標題與簡介 :</p>
+            <img src="images/bootstrap_template_title.jpg" class="img-responsive"><br>
+            <p class="lead">標題區下方是網頁主要內容區, 這部分使用網格架構, 將頁面左邊 8 格作為主要內容區 :</p>
+            <img src="images/bootstrap_template_articles.jpg" class="img-responsive"><br>  
+            <p class="lead">段落內容不外圖與文, 常用語法如下 :</p>
+            <p class="lead">&lt;p class="lead"&gt;內容&lt;/p&gt; (文字)<br>
+            &lt;img src="images/my_image.jpg" class="img-responsive"&gt; (圖片)</p> 
+            <p class="lead">右方側邊欄占用 3 個網格外帶 1 格 offset 剛好 12 格, 使用 Panel 面板結構做為容器, 可放一般內容 (短文側邊框) 或清單 (清單側邊框) :</p>
+            <img src="images/bootstrap_template_aside.jpg" class="img-responsive"><br> 
+            <p class="lead">此模板的側邊欄只用了 pannel-danger 與 panel-warning 這兩種顏色的 Panel 面板, 可用的面板樣式類別其實有下列 5 種, 可自行選用以套用不同的背景色 :</p> 
+            <ul class="lead">
+              <li>pannel-primary : 藍色</li>
+              <li>pannel-success : 咖啡色</li>
+              <li>pannel-info : 淡藍色</li>
+              <li>pannel-warning : 黃色</li>
+              <li>pannel-danger : 紅色.</p></li>
+            </ul>
+            <p class="lead">如果不需要側邊欄, 希望整個都當作內容區, 可將側邊欄 aside 標籤整組移除, 然後將 article 標籤底下的 div 的網格樣式類別改成 col-sm-12, 即 &lt;div class="col-sm-12"&gt;.</p> 
+            <p class="lead">總之, 只要將此網頁中所有以 "您的..." 開頭的部分用自己的資料代替, 其餘都不要動, 首頁取名 index.htm, 其餘網頁都複製此首頁模板去改, 然後將所有圖文檔上傳到 GitHub 就可以建立美美的個人網站了. 
+            <hr>
+            <nav>
+              <ul class="list-inline text-center">
+                <li><a class="btn btn-info btn-lg" href="#">上一篇</a></li>
+                <li><a class="btn btn-info btn-lg" href="#">下一篇</a></li>
+              </ul>
+            </nav>
+          </div>
+        </article>
+
+        <!-- 側邊欄 --> 		
+        <aside>
+          <div class="col-sm-3 col-sm-offset-1">
+            <!-- 短文側邊框範例 -->
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 style="text-align:center;">前端座右銘</h3>
+              </div>
+              <div class="panel-body">
+                <p>網頁設計無撇步, 只要懂一些 HTML, 善用 Copy & Paste 就能讓您 "from zero to hero". </p>
+              </div>
+            </div>
+		  
+            <!-- 連結清單側邊框範例-->
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 style="text-align:center;">網頁設計工具</h3>
+              </div>
+              <div class="panel-body">
+                <ol class="list-unstyled">
+                  <li>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML 語法教學</a>
+                  </li>
+                  <li>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS 語法教學</a>
+                  </li>
+                  <li>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">Javascript 語法教學</a>
+                  </li>
+                  <li>
+                    <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">顏色代碼查詢</a>
+                  </li>
+                  <li>
+                    <a href="https://tw.123rf.com/tools/bgremove/" target="_blank">線上圖檔去背</a>
+                  </li>
+                  <li>
+                    <a href="https://picpick.app/zh-tw/" target="_blank">Picpick 螢幕抓圖</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </aside>		
+      </div>
+    </div>    
+	
+    <!-- 頁尾 -->
+    <hr> 	
+    <footer>  
+      <div class="container">
+        <p>&copy; 2022 用 GitHub 輕鬆架站&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+        <p class="text-right"><a href="#">Back to top</a></p>
+      </div>	
+    </footer>
+  </body>	
+</html>    
