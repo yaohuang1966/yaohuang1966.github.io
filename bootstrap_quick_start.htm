@@ -176,6 +176,7 @@
           <a class="btn btn-primary" href="#table">表格樣式</a>
           <a class="btn btn-primary" href="#alert">警示區塊</a>
           <a class="btn btn-primary" href="#accordion">手風琴</a>
+          <a class="btn btn-primary" href="#jumbotron">Jombotron</a>
         </div>
       </div>
     </header>    
@@ -1029,6 +1030,54 @@
             <p class="lead">結果如下 :</p><br>
             <img src="images/example-bootstrap-accordion.jpg" class="img-responsive"><br><br>
             <p class="lead">手風琴通常用來收納一群區塊文章之用, 同一時間只有一個面板區塊展開, 使版面看起來較簡約.</p><br>
+            <hr>
+            <h3 id="jumbotron" class="text-primary"><span class="bg-info">11. 大螢幕廣告 (Jumbotron) :</span></h3>
+            <p class="lead">所謂大螢幕廣告 (Jumbotron) 是在網頁中放置滿版的強調訊息, 它預設會在網頁中建立一個佔有瀏覽器寬度的有圓角邊框的灰色區域來顯示內容, 做法是使用一個 class=jumnotron 的 div 元素, 基本結構如下 : </p>
+            <img src="images/bootstrap_jumbotron_structure_1.jpg" class="img-responsive"><br>
+            <p class="lead">也可以放在 class=container 的 div 中, 這樣就不會佔據整個瀏覽器寬度, 例如 : </p>
+            <img src="images/bootstrap_jumbotron_structure_2.jpg" class="img-responsive"><br>
+            <p class="lead">另一個作法是使用 jumbotron-fluid 類別, 裡層 div 使用 container-fluid 類別, 例如 : </p>
+            <img src="images/bootstrap_jumbotron_structure_3.jpg" class="img-responsive"><br>
+            <p class="lead">以上三種結構範例網頁如下 :</p>
+            <p class="lead"># <a href="examples/bootstrap_jumbotron.htm" target="_blank">大螢幕廣告測試</a> [<a href="https://github.com/yaohuang1966/yaohuang1966.github.io/blob/main/examples/bootstrap_jumbotron.htm" target="_blank">原始碼</a>]</p><br>            
+            <p class="text-primary" style="border: dotted 1px green; padding: 10px 10px 10px 10px;">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="jumbotron"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;購物節大特價<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;凡於購物節前後一周於本店消費皆七五折優惠&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="jumbotron"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;購物節大特價<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;凡於購物節前後一周於本店消費皆七五折優惠&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="jumbotron jumbotron-fluid"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container-fluid"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;購物節大特價<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;凡於購物節前後一周於本店消費皆七五折優惠&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+            </p><br>
+            <p class="lead">結果如下 :</p><br>
+            <img src="images/example-bootstrap-jumbotron.jpg" class="img-responsive"><br><br>
+            <p class="lead">可見第三種結構字與邊框距離看起來較適當.</p><br>
             <hr>
             <nav>
               <ul class="list-inline text-center">
